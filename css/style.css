@@ -1,0 +1,206 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+   :root{
+    --navbar-height:50px;
+   }
+   html{
+    scroll-behavior: smooth;
+   }
+  #logoimage {
+    width: 150px;
+    height: 150px;
+    margin: 3px 6px;
+   }
+   #logo{
+    margin: 3px 9px;
+   }
+   #navbar{
+  display: flex;
+  position: sticky;
+
+  align-items: center;
+}
+   
+    
+  #navbar ul{
+    display: flex;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    
+   }
+   #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+
+   }
+   #navbar ul li{
+    list-style: none;
+     font-size: 1.7rem;    
+   }
+   #navbar ul li a{
+    color: #000000;
+    display: block;     
+  padding: 23px 13px;
+  border-radius: 20px;
+  text-decoration: none;
+   }
+   #navbar ul li a:hover{
+    color: rgb(42, 4, 255);
+    background-color: white;
+
+   }
+   #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px ;
+     justify-content: center;
+     align-items: center;
+     height: 660px;
+     
+    
+   }
+  #home::before{
+    content: "";
+    position: absolute;
+    background: url(../image/img1.jpg)no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 837px;
+
+    width: 100%;
+    z-index:-1 ;
+    opacity: 0.8;
+
+  }
+  #home h1{
+     text-align: center;
+     font-family: 'Mohave', sans-serif;
+     height: 20px;
+  }
+  #home p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Mohave', sans-serif;
+    height: 40px;
+  }
+.h-primary{
+   font-size: 2.8rem;
+   padding :20px;
+    margin:7px
+}
+.btn{
+  padding: 6px 20px;
+  border: 2px solid black;
+  background-color: chocolate;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#services{
+  margin: 0px;
+  display: flex;
+}
+#services .box{
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 3px 4px;
+  border-radius: 20px;
+  background:rgb(236, 225, 225);
+
+}
+#services .box img{
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+#services .box p{
+  font-family: 'Mohave', sans-serif;
+}
+
+
+.h-primary{
+  font-size: 2.8rem;
+  padding: 21px;
+  margin: 0px;
+  font-family: 'Mohave', sans-serif;
+}
+.h-secondary{
+  font-size: 2.1rem;
+  padding: 12px;
+  font-family: 'Mohave', sans-serif;
+}
+.center{
+  text-align: center;
+}
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.client-items{
+  padding: 34px;
+}
+#clients img{
+  height: 123px;
+}
+#client-section::before{
+  content: "";
+  position: absolute;
+  background: url(../image/img12.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+#client-section{
+ /* height: 420px;*/
+  position: relative;
+}
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url(../image/img13.jpg)no-repeat center center/cover;
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom :34px; ;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box input,#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: 'Mohave', sans-serif;
+}
+
+footer{
+  background: black;
+  color: white;
+  padding: 9px;
+}
